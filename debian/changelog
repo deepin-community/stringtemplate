@@ -1,0 +1,96 @@
+stringtemplate (3.2.1-3) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Markus Koschany ]
+  * Moved the package to Git
+
+  [ Emmanuel Bourg ]
+  * Build with the DH sequencer instead of CDBS
+  * Standards-Version updated to 4.5.1
+  * Switch to debhelper level 13
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 02 Feb 2021 00:50:28 +0100
+
+stringtemplate (3.2.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control:
+    - Removed the dependency on a Java runtime for libstringtemplate-java
+    - Removed Michael Koch from the uploaders (Closes: #654132)
+    - Standards-Version updated to 3.9.5 (no changes)
+    - Use canonical URLs for the Vcs-* fields
+  * Switch to debhelper level 9
+  * Use XZ compression for the upstream tarball
+  * debian/rules: Improved the clean target
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Tue, 27 May 2014 13:29:58 +0200
+
+stringtemplate (3.2.1-1) unstable; urgency=low
+
+  * Team upload
+
+  [ Ludovic Claude ]
+  * New upstream version
+  * Add the Maven POM to the package
+  * Add a patch to force the version of stringtemplate in the
+    POM to be 3.2, instead of 3.3-SNAPSHOT (update or remove
+    this patch on a new upstream release), add a dependency on
+    quilt.
+  * Add a Build-Depends-Indep dependency on maven-repo-helper
+  * Use mh_installpom and mh_installjar to install the POM and the jar to the
+    Maven repository
+
+  [ Thierry Carrez ]
+  * debian/control: Also depend on a JRE to follow policy
+
+  [ Torsten Werner ]
+  * Add debian/orig-tar.sh to clean up the orig tarball from *.class and *.jar
+    files.
+  * Switch to source format 3.0.
+  * Update Standards-Version: 3.8.4.
+  * Remove Florian Weimer from uploaders list.
+
+ -- Torsten Werner <twerner@debian.org>  Thu, 06 May 2010 22:58:57 +0200
+
+stringtemplate (3.1-4) unstable; urgency=low
+
+  * (Build-)Depends on libantlr-java instead of antlr (Closes: #547179).
+  * Build-Depends on defualt-jdk and debhelper >= 7.
+  * Added missing Depends: ${misc:Depends}.
+  * Moved package to section 'java'.
+  * Updated Standards-Version to 3.8.3.
+
+ -- Michael Koch <konqueror@gmx.de>  Fri, 02 Oct 2009 08:00:49 +0200
+
+stringtemplate (3.1-3) unstable; urgency=low
+
+  * Added junit to Build-Depends-Indep. Closes #467605.
+
+ -- Michael Koch <konqueror@gmx.de>  Tue, 26 Feb 2008 15:20:55 +0100
+
+stringtemplate (3.1-2) unstable; urgency=low
+
+  * Re-added patch to build.xml to set classpath to antlr.jar in manifest
+    file. Closes: #466833.
+
+ -- Michael Koch <konqueror@gmx.de>  Sat, 23 Feb 2008 13:17:43 +0100
+
+stringtemplate (3.1-1) unstable; urgency=low
+
+  * New upstream version.
+  * Made Debian Java Maintainers the maintainer and moved Florian to Uploaders
+    and added myself.
+  * Removed libstringtemplate-java.links file and rewrote debian/rules.
+  * Added Homepage, Vcs-Svn and Vcs-Browser fields.
+  * Updated Standards-Version to 3.7.3.
+  * Added watch file.
+
+ -- Michael Koch <konqueror@gmx.de>  Tue, 19 Feb 2008 22:27:59 +0100
+
+stringtemplate (3.0-1) unstable; urgency=low
+
+  * Initial version
+
+ -- Florian Weimer <fw@deneb.enyo.de>  Sun, 22 Apr 2007 14:46:17 +0200
+

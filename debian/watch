@@ -1,0 +1,4 @@
+version=3
+http://www.stringtemplate.org/download.html \
+  http://www.stringtemplate.org/download/stringtemplate-(.*).tar.gz \
+  debian debian/orig-tar.sh
